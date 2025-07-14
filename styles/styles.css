@@ -60,7 +60,7 @@ aside{
     text-shadow: 1px 2px 4px rgb(17, 10, 10);
 }
 img.img_country{
-    width:60rem;
+    width: 200px;
     height: auto;
     border-radius: 0px;
     border: 2px solid;
@@ -68,8 +68,7 @@ img.img_country{
 }
 
 p{
-    padding: 1%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0%;
 }
 
 footer{
