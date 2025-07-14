@@ -25,6 +25,7 @@ a{
 
 }
 main{
+    max-width: 840px;
     width: 80rem;
     height: 35rem;
     margin: auto;
@@ -33,6 +34,11 @@ main{
     border: 3px solid;
     box-shadow: 0 0 50px rgb(141, 108, 108);
 }
+h1 {
+    color: rgb(158, 120, 120);
+    margin: 2rem;
+}
+
 img.pdp{
     border: 1px solid ;
     box-shadow: 0 0 50px rgb(46, 38, 38);
@@ -59,12 +65,16 @@ aside{
     margin-bottom: 8px;
     text-shadow: 1px 2px 4px rgb(17, 10, 10);
 }
-img.img_country{
+aside img{
     width: 200px;
     height: auto;
     border-radius: 0px;
     border: 2px solid;
 
+}
+main img{
+    width: 150px;
+    height: auto;
 }
 
 p{
