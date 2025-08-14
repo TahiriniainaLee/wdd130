@@ -199,6 +199,7 @@ figcaption {
     width: 100%;
     height: 100%;
 }
+/* Little comment : the code of contact is begin here */
 .contact{
     width: 100%;
     height: 30rem;
@@ -322,5 +323,6 @@ textarea{
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    
+
 }
+/* This is the end of this code CSS */
