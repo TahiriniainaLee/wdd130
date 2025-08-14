@@ -115,7 +115,7 @@ section{
     justify-content: center;
     text-align: center;
     border: 2px solid gray;
-    background-color: #8F8389;
+    background-color: #C5F4E0;
 }
 .text{
     color: #150707;
@@ -125,6 +125,7 @@ h2{
     font-size: 5rem;
     text-decoration: underline double;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #150707;
 }
 .two{
     display: flex;
@@ -325,4 +326,66 @@ textarea{
     border-radius: 10px;
 
 }
-/* This is the end of this code CSS */
+/* home */
+.entete{
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #150707;
+}
+.formulaire1{
+    width: 100%;
+    height: 18rem;
+}
+.bigform{
+    width: 100%;
+    height: 15rem;
+}
+.pub{
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 20px;
+    display: grid;
+    text-align: center;
+}
+/* Trips */
+.sect1{
+    width: 100%;
+    height: 37rem;
+    display: flex;
+    justify-content: space-around;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: #8F8389;
+}
+.divsect{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 35rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #535051;
+    box-shadow: 0px 10px 50px rgb(1, 115, 255);
+}
+.pictrips{
+    width: 250px;
+    height: 270px;
+    border-radius: 10px;
+    border: 3px solid rgb(49, 48, 42);
+}
+.divsect1{
+    width: 20%;
+    height: 20rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #535051;
+    box-shadow: 0px 10px 50px rgb(30, 74, 90);
+    text-align: center;    
+}
+.commantaire{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
