@@ -4,7 +4,7 @@ nav{
 }
 nav a{
     color: wheat;
-    padding: auto;
+    padding: 10px;
     display: block;
 }
 h1{
