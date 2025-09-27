@@ -1,0 +1,27 @@
+main{
+    max-width: 850px;
+}
+aside{
+    width:100rem;
+    height: 20rem;
+    margin:5px;
+    border: 1px solid black;
+    padding:10px;
+    background-color: rgb(78, 55, 55);
+    color: wheat;
+}
+aside img{
+    width: 200px;
+    height: auto;
+}
+main img{
+    width: 100px;
+    height: auto;
+}
+P{padding: 0;}
+
+footer{
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
