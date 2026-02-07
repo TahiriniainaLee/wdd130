@@ -115,7 +115,9 @@ h1, h2 {
 .history img {
   width: 100%;
 }
-
+h2{
+  color: var(--secondary-color);
+}
 /* ---------- ADVENTURES ---------- */
 .adventures {
   margin: 32px 0;
