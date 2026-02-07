@@ -1,4 +1,4 @@
-/* ---------- CSS VARIABLES ------ */
+/* ---------- CSS VARIABLES ---------- */
 :root {
   --primary-color: #1d3557;
   --secondary-color: #457b9d;
@@ -27,13 +27,12 @@ header, main, footer {
   margin: 0 auto;
 }
 
-/* ---------- HEADER ---------- */
+/* ---------- HEADER (GRID) ---------- */
 header {
   background-color: var(--primary-color);
-  color: var(--accent2-color);
-  display: flex;
+  display: grid;
+  grid-template-columns: 150px 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: 16px;
 }
 
@@ -41,9 +40,11 @@ header img {
   width: 120px;
 }
 
+/* ---------- NAV (FLEX) ---------- */
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
   gap: 16px;
 }
 
@@ -53,16 +54,15 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 /* ---------- HEADINGS ---------- */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
-}
-
-/* ---------- SPACING ---------- */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+  text-align: center;
 }
 
 /* ---------- HERO ---------- */
@@ -71,7 +71,6 @@ nav, p, section, article {
 }
 
 .hero img {
-  display: block;
   width: 100%;
   height: auto;
 }
@@ -80,10 +79,9 @@ nav, p, section, article {
   position: absolute;
   top: 20px;
   width: 100%;
-  padding: 16px;
-  text-align: center;
   background-color: var(--accent1-color);
-  color: #fff;
+  color: white;
+  padding: 16px;
   opacity: 0.85;
 }
 
@@ -91,30 +89,67 @@ nav, p, section, article {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
   max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 16px;
 }
 
 .hero article img {
   float: right;
   width: 125px;
   margin-left: 10px;
-  border: 2px solid var(--secondary-color);
+}
+
+/* ---------- HISTORY ---------- */
+.history {
+  margin: 32px 0;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.history img {
+  width: 100%;
+}
+
+/* ---------- ADVENTURES ---------- */
+.adventures {
+  margin: 32px 0;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 150px;
 }
 
 /* ---------- FOOTER ---------- */
 footer {
   background-color: var(--primary-color);
   color: var(--accent2-color);
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
   padding: 16px;
 }
 
-.socialmedia a {
-  text-decoration: none;
+.socialmedia {
+  display: flex;
+  gap: 8px;
 }
 
 .socialmedia img {
   width: 32px;
-  margin: 8px;
 }
