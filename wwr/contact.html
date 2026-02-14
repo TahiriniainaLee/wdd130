@@ -1,128 +1,118 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TAHIRINIAINA Andrianaivo's BYU-idaho WDD130 course Home Page">
-    <meta name="author" content="TAHIRINIAINA Andrianaivo">
-    <title>Contact US | Rapids White Water Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Dry Oar Rafting Company for reservations, general inquiries, and website suggestions.">
+  <meta name="author" content="Tahiriniaina Andrianaivo">
+  <title>Contact Us | Dry Oar Rafting Company</title>
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    <header>
-     <img src="images/logo.png" alt="Rapids White Water Rafting Logo">
-     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-     </nav>
-    </header>
-    <main>
-    <h1>Contact Us</h1>
+<header>
+  <img src="images/logo.png" alt="Dry Oar Rafting Company Logo">
 
-    <!-- COMPANY INFORMATION -->
-    <section class="contact-info">
-        <h2>Company Information</h2>
-        <p><strong>Address:</strong> 123 Main River Street, Kolob, California</p>
-        <p><strong>Phone:</strong> +1 (999) 999-9999</p>
-        <p><strong>Email:</strong> info@dryoar.com</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="trips.html">Trips</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+<main>
+  <h1>Dry Oar Rafting Company</h1>
 
-        <div class="map">
+  <section class="contact-info">
+    <h2>Company Information</h2>
+    <p><strong>Address:</strong> 123 Main River Street, Kolob, California</p>
+    <p><strong>Phone:</strong> 999-999-9999</p>
+    <p><strong>Email:</strong> info@dryoar.com</p>
+
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0863551234567!2d-122.41941508468155!3d37.77492977975998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dfdfdfdf%3A0x123456789!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1610000000000"
                 allowfullscreen=""
                 loading="lazy">
             </iframe>
-        </div>
-    </section>
+  </section>
 
-    <!-- EMPLOYEE PROFILES -->
-    <section class="employees">
-        <h2>Meet Our Team</h2>
+  <section class="employees">
+    <h2>Meet Our Team</h2>
 
-        <div class="employee-cards">
+    <figure>
+      <img src="images/employee1.jpg" alt="John Smith - General Manager">
+      <figcaption>John Smith - General Manager</figcaption>
+    </figure>
 
-            <figure>
-                <img src="images/employee1.jpg" alt="John Smith - General Manager">
-                <figcaption>John Smith - General Manager</figcaption>
-            </figure>
+    <figure>
+      <img src="images/employee2.jpg" alt="Sarah Lee - Lead Guide">
+      <figcaption>Sarah Lee - Lead Guide</figcaption>
+    </figure>
 
-            <figure>
-                <img src="images/employee2.jpg" alt="Sarah Johnson - Lead River Guide">
-                <figcaption>Sarah Johnson - Lead River Guide</figcaption>
-            </figure>
+    <figure>
+      <img src="images/employee3.jpg" alt="Michael Brown - Reservations Manager">
+      <figcaption>Michael Brown - Reservations Manager</figcaption>
+    </figure>
+  </section>
 
-            <figure>
-                <img src="images/employee1.jpg" alt="Michael Brown - Reservation Specialist">
-                <figcaption>Michael Brown - Reservation Specialist</figcaption>
-            </figure>
+  <section class="contact-form">
+    <h2>Send Us a Message</h2>
 
-        </div>
-    </section>
+    <form action="#" method="post">
 
-    <!-- CONTACT FORM -->
-    <section class="contact-form">
-        <h2>Send Us a Message</h2>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
 
-        <form action="#" method="post">
+      <label for="email">Email Address:</label>
+      <input type="text" id="email" name="email" required>
 
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+      <fieldset>
+        <legend>Purpose of Message</legend>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="general">
+          <input type="radio" id="general" name="purpose" value="general" required>
+          General Inquiry
+        </label>
 
-            <fieldset>
-                <legend>Message Purpose:</legend>
+        <label for="reservation">
+          <input type="radio" id="reservation" name="purpose" value="reservation">
+          Reservation Question
+        </label>
 
-                <label>
-                    <input type="radio" name="purpose" value="general" required>
-                    General Inquiry
-                </label>
+        <label for="suggestion">
+          <input type="radio" id="suggestion" name="purpose" value="suggestion">
+          Website Suggestion
+        </label>
+      </fieldset>
 
-                <label>
-                    <input type="radio" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
 
-                <label>
-                    <input type="radio" name="purpose" value="suggestion">
-                    Website Suggestion
-                </label>
-            </fieldset>
+      <label for="subscribe">
+        <input type="checkbox" id="subscribe" name="subscribe">
+        Please subscribe me to the monthly newsletter
+      </label>
 
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
 
-            <label class="checkbox">
-                <input type="checkbox" name="subscribe">
-                Please subscribe me to the monthly newsletter
-            </label>
+    </form>
+  </section>
+</main>
 
-            <button type="submit" class="submit-btn">
-                Send Message
-            </button>
+<footer>
+  <p>© 2026 Dry Oar Rafting Company | Tahiriniaina Andrianaivo</p>
 
-        </form>
-    </section>
-    </main>
-    <footer>
-     <p>© 2026 | Rapids White Water Rafting| TAHIRINIAINA Andrianaivo</p>
+  <nav class="socialmedia">
+    <a href="#">
+      <img src="images/facebook.png" alt="Facebook">
+    </a>
+    <a href="#">
+      <img src="images/linkedin.png" alt="linkedin">
+    </a>
+    <a href="#">
+      <img src="images/instagram.png" alt="Instagram">
+    </a>
+  </nav>
+</footer>
 
-     <nav class="socialmedia">
-      <a href="https://facebook.com">
-        <img src="images/facebook.png" alt="Facebook Icon">
-      </a>
-      <a href="https://linkedin.com">
-        <img src="images/linkedin.png" alt="LinkedIn Icon">
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/instagram.png" alt="Instagram Icon">
-      </a>
-     </nav>
-    </footer>
 </body>
 </html>
